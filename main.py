@@ -1,11 +1,9 @@
 from flask import Flask, jsonify
-import lxml
 import requests
 from bs4 import BeautifulSoup
 import re
-import time
-from flask import Response
-import json
+
+
 
 
 
