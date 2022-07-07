@@ -15,7 +15,7 @@ An unofficial api client for pulling Player Stats, Live Score, Fixtures, Tables 
  
   <h2>Individual PLayer Stats</h2>
  <ul>
-  <li>Example: Stats of Virat Kohli | One can use the common name of the Players as well to retrive the datails</li>
+  <li>Example: Stats of Virat Kohli | You can use the common name of the Players as well to retrive the datails</li>
   <br> <img src="Cricket API/player_stats.jpg"> <br>
  </ul>
 
