@@ -150,12 +150,7 @@ def schedule():
             matches_one['venue'] = venue
             matches_one['time'] = time
             matches_all.append(matches_one)
-            print("Match: ", title)
-            print("Date: ", date)
-            print("Venue: ", venue)
-            print("Time: ", time)
-            print("----------------------")
-            print(page)
+            
     return jsonify(matches_all)
 
     
