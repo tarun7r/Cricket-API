@@ -125,16 +125,14 @@ def schedule():
     source = requests.get(link).text
     page = BeautifulSoup(source, "lxml")
     page = page.find_all("div",class_="cb-col-100 cb-col")
-    matches = []
     matches_all = []
-    current_series = None
+
     for container in page:
         match_details = container.find_all('div', class_='cb-ovr-flo cb-col-50 cb-col cb-mtchs-dy-vnu cb-adjst-lst')
         
         for match in match_details:
             matches_one = {}
             title = match.find('a')['title']
-            #date = match.find('span', itemprop='startDate').text.strip()
             date_div = container.find('div', class_='cb-lv-grn-strip text-bold')
             if date_div:
                 date = date_div.text.strip()
@@ -152,9 +150,6 @@ def schedule():
             matches_all.append(matches_one)
             
     return jsonify(matches_all)
-
-    
-    return jsonify(matches)
 
 
 @app.route('/live')
