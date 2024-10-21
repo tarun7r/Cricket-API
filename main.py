@@ -127,18 +127,17 @@ def schedule():
     page = page.find_all("div",class_="cb-col-100 cb-col")
     matches = []
     matches_all = []
-
+    current_series = None
     for container in page:
-        series_name = container.find('a', class_='cb-col-33 cb-col cb-mtchs-dy text-bold')
-        if series_name:
-            series_name = series_name.text.strip()
-    
         match_details = container.find_all('div', class_='cb-ovr-flo cb-col-50 cb-col cb-mtchs-dy-vnu cb-adjst-lst')
         
         for match in match_details:
             matches_one = {}
             title = match.find('a')['title']
-            date = match.find('span', itemprop='startDate').text.strip()
+            #date = match.find('span', itemprop='startDate').text.strip()
+            date_div = container.find('div', class_='cb-lv-grn-strip text-bold')
+            if date_div:
+                date = date_div.text.strip()
             venue = match.find('div', class_='cb-font-12 text-gray cb-ovr-flo').text.strip()
             time_div = match.find_next('div', class_='cb-col-50 cb-col cb-mtchs-dy-tm cb-adjst-lst')
             if time_div:
@@ -146,13 +145,17 @@ def schedule():
             else:
                 time = "Time not available"
             
-            matches_one["series"] = series_name
             matches_one['match'] = title
             matches_one['date'] = date
             matches_one['venue'] = venue
             matches_one['time'] = time
             matches_all.append(matches_one)
-            
+            print("Match: ", title)
+            print("Date: ", date)
+            print("Venue: ", venue)
+            print("Time: ", time)
+            print("----------------------")
+            print(page)
     return jsonify(matches_all)
 
     
