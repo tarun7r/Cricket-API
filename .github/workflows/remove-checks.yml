@@ -1,0 +1,13 @@
+name: Cleanup Dummy
+
+on:
+  push:
+    branches:
+      - main  # or 'master', adjust if needed
+
+jobs:
+  dummy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dummy step
+        run: echo "This is a dummy workflow to override stale checks"
