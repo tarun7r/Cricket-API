@@ -1,5 +1,5 @@
-<H2>Cricket API</H2>
-This is a simple Flask web application that provides an API to retrieve Player Stats, Live Score, Fixtures, Tables and Results data of Cricket Matches ( ODI, T20, Test and IPL ) from Cricbuzz
+<H2>Cricket API 2.0</H2>
+This is a simple Flask web application that provides an API to retrieve Player Stats, Live Score, Fixtures, Tables and Results data of Cricket Matches ( ODI, T20, Test and IPL ) from Cricbuzz website
 <h2>API Endpoints</h2>
 
 <p>The application provides the following API endpoints:</p>
@@ -75,5 +75,12 @@ This is a simple Flask web application that provides an API to retrieve Player S
   <li>Example: Stats of Virat Kohli | You can use the common name of the Players as well to retrive the datails</li>
   <br> <img src="Cricket API/player_stats.jpg"> <br>
  </ul>
-
+<h2>Update 🚀</h2>
+<p>The API has been enhanced with new features and improvements:</p>
+<ul>
+  <li>🎯 Added support for retrieving bowling career summaries for players.</li>
+  <li>⚡ Optimized the codebase for better performance and reliability.</li>
+  <li>🔄 Rebased and updated to ensure compatibility with the latest dependencies.</li>
+</ul>
+<p>Enjoy the latest version of the Cricket API! 🏏</p>
 

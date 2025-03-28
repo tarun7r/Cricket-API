@@ -16,11 +16,6 @@ matches = page.find_all("div",class_="cb-scr-wll-chvrn cb-lv-scrs-col")
 live_matches = []
 
 for i in range(len(matches)):
-    live_matches.append(matches[i].text)
+    live_matches.append(matches[i].text.strip())
 
-
-
-
-
-
-
+print(live_matches)
