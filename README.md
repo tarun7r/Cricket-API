@@ -57,7 +57,13 @@ This is a simple Flask web application that provides an API to retrieve Player S
 <h3>GET /live</h3>
 <p>The API returns a JSON array containing the details of live matches, including team names, scores, and overs played.</p>
  <p>The API returns a JSON object with the following structure:</p>
-<pre><code>["Australia 45/1 (8.4 ov)","Bangladesh 136/4 (17.4 ov)","India 118/2 (13.3 ov)",...]</code></pre>
+<pre><code>[
+  "RCB196-7 (20 Ovs) CSK9-2 (2.3 Ovs) Chennai Super Kings need 188 runs",
+  "NWES..252-4 TIT Day 1: Stumps",
+  "WPR373-3 BOL Day 1: Stumps",
+  "DOL83-2 LION.. Day 1: Stumps",
+  "QL95 & 445 SAUS271 Day 3: Stumps - Queensland lead by 269 runs"
+]</code></pre>
   
 <h2>Live Score</h2>
 <ul>
