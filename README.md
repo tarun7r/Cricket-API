@@ -90,3 +90,7 @@ This is a simple Flask web application that provides an API to retrieve Player S
 </ul>
 <p>Enjoy the latest version of the Cricket API! 🏏</p>
 
+<H2>Disclaimer</H2>
+This project is created solely for learning and educational purposes. It is not intended for production-level use or commercial applications
+
+
