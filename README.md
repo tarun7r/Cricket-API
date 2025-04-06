@@ -1,5 +1,5 @@
 <H2>Cricket Hub - Cricket API 2.0</H2>
-This is a simple Flask web application that provides an API and a user-friendly website to retrieve Player Stats, Live Scores, Fixtures, Tables, and Results data of Cricket Matches (ODI, T20, Test, and IPL) from the Cricbuzz website.
+This is a simple Flask web application that provides an API and a user-friendly website to retrieve Player Stats, Live Scores, Fixtures, Tables, and Results data of Cricket Matches (ODI, T20, Test, and IPL) from the online websites
 
 <h2>Website Features</h2>
 <p>The application now includes a website accessible at the <code>/</code> endpoint with the following features:</p>
@@ -57,18 +57,23 @@ This is a simple Flask web application that provides an API and a user-friendly 
 <h3>GET /schedule</h3>
 <p>The API returns a JSON array containing the details of upcoming matches, including date, teams, and tournament.</p>
 <p>The API returns a JSON object with the following structure:</p>
-<pre><code>["India vs South Africa, 1st ODI","India vs South Africa, 2nd ODI","India vs South Africa, 3rd ODI",...]</code></pre>
+<pre><code>
+[
+    "India vs South Africa, 1st ODI",
+    "India vs South Africa, 2nd ODI",
+    // ... additional matches
+]
+</code></pre>
 
 <h3>GET /live</h3>
 <p>The API returns a JSON array containing the details of live matches, including team names, scores, and overs played.</p>
 <p>The API returns a JSON object with the following structure:</p>
-<pre><code>[
-  "RCB196-7 (20 Ovs) CSK9-2 (2.3 Ovs) Chennai Super Kings need 188 runs",
-  "NWES..252-4 TIT Day 1: Stumps",
-  "WPR373-3 BOL Day 1: Stumps",
-  "DOL83-2 LION.. Day 1: Stumps",
-  "QL95 & 445 SAUS271 Day 3: Stumps - Queensland lead by 269 runs"
-]</code></pre>
+<pre><code>
+[
+    "RCB196-7 (20 Ovs) CSK9-2 (2.3 Ovs) Chennai Super Kings need 188 runs",
+    // ... additional live matches
+]
+</code></pre>
 
 <h2>Live Score</h2>
 <ul>
@@ -103,7 +108,5 @@ This is a simple Flask web application that provides an API and a user-friendly 
 </ul>
 <p>Enjoy the latest version of the Cricket API and website! 🏏</p>
 
-<H2>Disclaimer</H2>
-This project is created solely for learning and educational purposes. It is not intended for production-level use or commercial applications.
-
-<p>Note: The frontend HTML code for this project was generated using GPT</p>
+<H2>Disclaimer ⚠️</H2>
+This project is strictly for educational purposes. Not intended for production use. The frontend HTML was generated using GPT
