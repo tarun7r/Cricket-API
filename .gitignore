@@ -1,3 +1,4 @@
 cric_venv/
 # macOS
 .DS_Store
+.github/workflows

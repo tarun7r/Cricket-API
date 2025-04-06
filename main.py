@@ -7,13 +7,10 @@ import time
 from flask import Response
 import json
 from googlesearch import search #pip install googlesearch-python
-
+from flask import render_template
 
 app = Flask(__name__)
 
-@app.route('/')
-def index():
-    return "Hey there! This is a Cricket API. You can use the following endpoints: /players/<player_name>, /schedule, /live."
 
 @app.route('/players/<player_name>', methods=['GET'])
 def get_player(player_name):
@@ -165,6 +162,9 @@ def live_matches():
     
     return jsonify(live_matches)
 
+@app.route('/')
+def website():
+    return render_template('index.html')
 
 if __name__ =="__main__":
     app.run(debug=True)
