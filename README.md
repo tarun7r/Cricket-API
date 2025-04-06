@@ -2,7 +2,7 @@
 This is a simple Flask web application that provides an API and a user-friendly website to retrieve Player Stats, Live Scores, Fixtures, Tables, and Results data of Cricket Matches (ODI, T20, Test, and IPL) from the online websites
 
 <h2>Website Features</h2>
-<p>The application now includes a website accessible at the <code>/</code> endpoint with the following features:</p>
+<p>The application now includes a website accessible with the following features:</p>
 <ul>
   <li>🎯 <strong>Live Scores:</strong> View live scores of ongoing matches with real-time updates.</li>
   <li>📅 <strong>Schedule:</strong> Check the schedule of upcoming matches, including dates and teams.</li>
@@ -102,7 +102,7 @@ This is a simple Flask web application that provides an API and a user-friendly 
 <h2>Update 🚀</h2>
 <p>The API and website have been enhanced with new features and improvements:</p>
 <ul>
-  <li>🎯 Added a user-friendly UI website at the <code>/</code> endpoint for interacting with live scores, player stats, schedule, and player comparison.</li>
+  <li>🎯 Added a user-friendly UI website for interacting with live scores, player stats, schedule, and player comparison.</li>
   <li>⚡ Optimized the codebase for better performance and reliability.</li>
   <li>🔄 Rebased and updated to ensure compatibility with the latest dependencies.</li>
 </ul>
